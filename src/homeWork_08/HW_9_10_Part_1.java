@@ -3,6 +3,7 @@ package homeWork_08;
 import java.util.Arrays;
 
 public class HW_9_10_Part_1 {
+
     public static void showInfo(int a) {
         System.out.println();
         System.out.println("========= TASK " + a + " ============");
