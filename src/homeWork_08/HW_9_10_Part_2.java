@@ -122,6 +122,13 @@ public class HW_9_10_Part_2 {
         showInfo(20);
         //С помощью методов класса Math и смекалки создать массив чисел от 1.11 до 1.99 включительно
         //Методы Math.round(), Math.nextUp()
+        int le = (int) Math.round(((1.99 - 1.11) * 100));
+        double[] arr1 = new double[le+1];
+        int i = 0;
+        for (double j = Math.round(1.11 * 100); j <= Math.round(1.99 * 100); j++) {
+            arr1[i++] = j / 100;
+        }
+        System.out.println(Arrays.toString(arr1));
 
     }
 
