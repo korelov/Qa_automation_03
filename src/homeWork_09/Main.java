@@ -14,6 +14,8 @@ public class Main {
 
         e1.showSalary();
 
+        //Вызываем статический метод количество, объектов которые будет созданные в классе Employee
+        System.out.println(Employee.count);
 
         System.out.println(e1.isSameName(e2));
 

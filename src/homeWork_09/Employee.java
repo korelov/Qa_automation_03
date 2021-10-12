@@ -2,12 +2,15 @@ package homeWork_09;
 
 public class Employee {
 
+    static int count;
+    
     Person person;
     double salary;
 
     public Employee(Person person, double salary) {
         this.person = person;
         this.salary = salary;
+        count++;
     }
 
     public boolean isSameName(Employee employee) {
