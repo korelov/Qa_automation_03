@@ -14,6 +14,7 @@ public class HW_2 {
             a--;
             System.out.println();
         }
+
         System.out.println(line);
 
         int b = 9;
@@ -30,6 +31,7 @@ public class HW_2 {
         }
 
         System.out.println(line);
+
         int c = 9;
         while (c >= 0) {
             for (int j = 9; c < j; j--) {
