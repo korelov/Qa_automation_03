@@ -3,7 +3,8 @@ package homeWork_05;
 // https://docs.google.com/document/d/1kfxu0qeNHa6mpAIfcZoZg8azqO140iZmubU3gpWa1lM/edit
 
 public class HW_2 {
-    static String line = "\n"+"========================="+"\n";
+    static String line = "\n" + "=========================" + "\n";
+
     public static void main(String[] args) {
 
         int a = 9;
@@ -18,7 +19,7 @@ public class HW_2 {
         System.out.println(line);
 
         int b = 9;
-        while (b >= 0){
+        while (b >= 0) {
 
             for (int i = 9; i > b; i--) {
                 System.out.print("  ");
