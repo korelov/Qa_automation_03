@@ -1,4 +1,4 @@
-package homeWork_01;
+package qa_automation_03.homeWork_01;
 
 public class Task1 {
     public static void main(String[] args) {
