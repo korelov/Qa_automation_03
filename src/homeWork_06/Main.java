@@ -8,14 +8,9 @@ public class Main {
         Employee e1 = new Employee(p1, 550.5);
         Employee e2 = new Employee(p2, 450);
 
-        System.out.println(e1.person.name);
-        p1.showInfo();
-        p2.showInfo();
 
         e1.showSalary();
 
-        //Вызываем статический метод количество, объектов которые будет созданные в классе Employee
-        System.out.println(Employee.count);
 
         System.out.println(e1.isSameName(e2));
 

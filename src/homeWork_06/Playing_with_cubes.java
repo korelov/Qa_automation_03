@@ -1,7 +1,7 @@
 package homeWork_06;
 // https://www.codewars.com/kata/55c0a79e20be94c91400014b/java
 
- class Cube {
+class Cube {
 
     int Side;
 
