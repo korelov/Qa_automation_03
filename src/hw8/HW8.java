@@ -64,9 +64,11 @@ public class HW8 {
     public static String arrToString(String[] arr) {
         String res = "";
         for (int i = 0; i < arr.length; i++) {
-            res += arr[i] + " ";
+
             if (i == arr.length - 1) {
                 res += arr[i] + ".";
+            } else {
+                res += arr[i] + " ";
             }
         }
         return res;
@@ -96,7 +98,7 @@ public class HW8 {
         int length;
 
         if (even == odd) {
-            return arr;
+            return new int[0];
         } else length = Math.max(even, odd);
 
         int index = 0;
@@ -171,14 +173,14 @@ public class HW8 {
         for (int i = 0; i < arr.length; i++) {
             if (i == 0) {
                 phone += arr[i];
-                phone+="(";
+                phone += "(";
             }
             if (i > 0 && i < 3) {
                 phone += arr[i];
             }
-            if (i==3){
-                phone+=arr[i];
-                phone+=")";
+            if (i == 3) {
+                phone += arr[i];
+                phone += ")";
             }
             if (i > 4) {
                 phone += arr[i];
@@ -188,4 +190,23 @@ public class HW8 {
         return new String[]{phone, country};
     }
 
+
+    public static int[] task25(int[] arr, int a, int b) {
+
+        int leght = b - a + 1;
+        int index = 0;
+        int[] arr1 = new int[leght];
+        for (int i = a; i <= b; i++) {
+            arr1[index++] = arr[i];
+        }
+        return arr1;
+    }
+
+    public static int[] twoArray(int[] a, int[] b){
+
+        int[] arr = new int[a.length+b.length];
+
+        
+        return arr;
+    }
 }

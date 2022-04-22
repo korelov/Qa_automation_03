@@ -54,16 +54,22 @@ public class Main {
         System.out.println(Arrays.toString(HW8.randomArray(54)));
 
         Utils.showTaskNumber(19);
-        System.out.println(Arrays.toString(HW8.randomArray(10,5)));
+        System.out.println(Arrays.toString(HW8.randomArray(10, 5)));
 
         Utils.showTaskNumber(20);
         System.out.println(Arrays.toString(HW8.twoDigitNumbers(HW8.randomArray(20))));
 
         Utils.showTaskNumber(21);
-        System.out.println(Arrays.toString(HW8.differenceArray(new int[]{25,35,30,55,99})));
+        System.out.println(Arrays.toString(HW8.differenceArray(new int[]{25, 35, 30, 55, 99})));
 
         Utils.showTaskNumber(22);
         System.out.println(Arrays.deepToString(HW8.phoneNumber(new int[]{1, 8, 0, 0, 1, 2, 3, 4, 5, 6, 7})));
+
+        Utils.showTaskNumber(25);
+        System.out.println(Arrays.toString(HW8.task25(new int[]{1, 2, 3, 4, 5}, 1, 3)));
+
+        Utils.showTaskNumber(26);
+
 
     }
 }
