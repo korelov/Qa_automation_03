@@ -193,20 +193,52 @@ public class HW8 {
 
     public static int[] task25(int[] arr, int a, int b) {
 
-        int leght = b - a + 1;
+        int length = b - a + 1;
         int index = 0;
-        int[] arr1 = new int[leght];
+        int[] arr1 = new int[length];
         for (int i = a; i <= b; i++) {
             arr1[index++] = arr[i];
         }
         return arr1;
     }
 
-    public static int[] twoArray(int[] a, int[] b){
+    public static int[] twoArray(int[] arr1, int[] arr2) {
 
-        int[] arr = new int[a.length+b.length];
+        int[] tempArray = new int[arr1.length + arr2.length];
+        int arrLength = tempArray.length;
 
-        
-        return arr;
+        for (int i = 0; i < arr1.length; i++) {
+            tempArray[i] = arr1[i];
+        }
+        for (int i = 0; i < arr2.length; i++) {
+            tempArray[i + arr1.length] = arr2[i];
+        }
+        for (int i = 0; i < tempArray.length; i++) {
+            for (int j = 0; j < tempArray.length - 1; j++) {
+                if (tempArray[j + 1] < tempArray[j]) {
+                    int temp = tempArray[j + 1];
+                    tempArray[j + 1] = tempArray[j];
+                    tempArray[j] = temp;
+                }
+            }
+        }
+        for (int i = 0; i < tempArray.length - 1; i++) {
+            if (tempArray[i] == tempArray[i + 1]) {
+                arrLength--;
+            }
+        }
+
+        int[] result = new int[arrLength];
+
+        for (int i = 0, index = 0; i < tempArray.length - 1; i++, index++) {
+            if (tempArray[i] != tempArray[i + 1]) {
+                result[index] = tempArray[i];
+            } else {
+                index--;
+            }
+            result[result.length - 1] = tempArray[tempArray.length - 1];
+        }
+
+        return result;
     }
 }
