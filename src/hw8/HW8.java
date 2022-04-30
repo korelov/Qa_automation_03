@@ -238,7 +238,6 @@ public class HW8 {
             }
             result[result.length - 1] = tempArray[tempArray.length - 1];
         }
-
         return result;
     }
 }
