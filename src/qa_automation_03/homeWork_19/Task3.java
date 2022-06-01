@@ -11,23 +11,27 @@ import java.util.List;
 public class Task3 {
 
     public static void main(String[] args) {
-        List list = new ArrayList();
+        List<Integer> list = new ArrayList<>();
         for (int i = 100; i <= 1000; i++) {
-            if (i % 2 != 0) {
-                list.add(i);
+            list.add(i);
+        }
+        System.out.println(list.size());
+        for (int i = list.size() - 1; i >= 0; i--) {
+            if (list.get(i) % 2 == 0) {
+                list.remove(i);
             }
         }
         System.out.println(list.size());
         System.out.println(list);
 
-        List list1 = new ArrayList();
-        for (Integer i = 100; i <= 1000; i++) {
-            if (i % 2 != 0) {
-                list1.add(i);
+        for (Integer i = list.size() - 1; i >= 0; i--) {
+            if (list.get(i) % 2 == 0) {
+                list.remove(i.intValue());
             }
         }
-        System.out.println(list1.size());
-        System.out.println(list1);
+        System.out.println(list.size());
+        System.out.println(list);
+
     }
 }
 

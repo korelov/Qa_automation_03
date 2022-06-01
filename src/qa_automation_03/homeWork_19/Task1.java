@@ -17,7 +17,7 @@ Blue.
  */
 public class Task1 {
     public static void main(String[] args) {
-        List list = new ArrayList();
+        List<String> list = new ArrayList<>();
         list.add("White");
         list.add("Tan");
         list.add("Yellow");
@@ -27,8 +27,8 @@ public class Task1 {
         list.add("Purple");
         list.add("Blue");
         System.out.println(list);
-        for (int i = 0; i < list.size(); i++) {
-            if (list.get(i).toString().toLowerCase().contains("l")) {
+        for (int i = list.size() - 1; i >= 0; i--) {
+            if (list.get(i).toLowerCase().contains("l")) {
                 list.remove(i);
             }
         }

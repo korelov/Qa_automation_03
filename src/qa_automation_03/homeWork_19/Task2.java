@@ -8,7 +8,7 @@ import java.util.List;
 public class Task2 {
 
     public static void main(String[] args) {
-        List list = new ArrayList();
+        List<Integer> list = new ArrayList<>();
         for (int i = 100; i <= 1000; i++) {
             list.add(i);
         }
